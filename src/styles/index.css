@@ -1,15 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
 
-/* 
+.App {
+    background-color: rgb(227, 224, 224);
+    position: relative;
+    padding: 50px;
+    margin: auto;
+  }
+  
+  .App,
+  .App::before,
+  .App::after {
+    /* Add shadow to distinguish sheets from one another */
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.396);
+  }
+  
+  .App::before,
+  .App::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(181, 171, 171);
+  }
+  
+  /* Second sheet of paper */
+  .App::before {
+    left: 7px;
+    top: 5px;
+    z-index: -1;
+  }
+  
+  /* Third sheet of paper */
+  .App::after {
+    left: 12px;
+    top: 10px;
+    z-index: -2;
+  }
+  .Container {
+    margin:auto;
+  }
+  
+  h1 {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+  .text-center {
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      font-size:x-large; 
+      padding-right: 10px;
+  }
+  
+  .List {
+      justify-content: center; 
+  }
+  h1 {
+      text-align: center;
+    }
+    #todo-list {
+      width: 500px;
+      margin: 60px auto;
+    }
 
-    You can write your own styles here...
+    form, .todo {
+      width:350px;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95;
+    background:#fff; 
+    }
     
+    form {
+      display: flex;
+      margin: auto;
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+    }
+   input {
+      padding: 4px 8px;
+      flex-grow: 1;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      background-color: #f4f4f4;
+    }
+   
+  
+    button {
+    align-self:auto;
+    border-width: 0px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 23px;
+    outline: none;
+    padding: .55rem;
+    transition: all 235ms ease-in-out;
+    touch-action: manipulation; 
+    }
 
-*/
+    button:hover {
+      box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+      background-color: rgba(51, 155, 229, 0.659);
+    }
 
+    button:active {
+      background-color: rgba(0, 100, 206, 0.901);
+    }
 
-
+    button:focus {
+      box-shadow: rgba(0, 0, 0, 0.485) 2px 8px 4px -6px;
+    }
